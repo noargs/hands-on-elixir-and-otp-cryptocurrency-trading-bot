@@ -36,7 +36,7 @@ defmodule Naive.Trader do
 end
 ```
 
-Our module uses the [GenServer](https://hexdocs.pm/elixir/master/GenServer.html#content) behavior and to fulfill its "contract", we need to implement the `init/1` function. The `start_link/1` function is a convention and it allows us to register the process with a name(it's a default function that the `Supervisor` will use when starting the Trader). We also add a `require Logger` as we will keep on logging across the module.
+Our module uses the [GenServer](https://hexdocs.pm/elixir/GenServer.html) behavior and to fulfill its "contract", we need to implement the `init/1` function. The `start_link/1` function is a convention and it allows us to register the process with a name(it's a default function that the `Supervisor` will use when starting the Trader). We also add a `require Logger` as we will keep on logging across the module.
 
 Next, let's model the state of our server:
 
